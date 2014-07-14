@@ -1,0 +1,4 @@
+QTableWidget {
+	alternate-background-color: yellow;
+     	background-color: red;
+}

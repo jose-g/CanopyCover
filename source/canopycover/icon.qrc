@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/icons_rec">
+        <file>icon/1.bmp</file>
+        <file>icon/2.bmp</file>
+        <file>icon/3.bmp</file>
+        <file>icon/4.bmp</file>
+        <file>icon/5.bmp</file>
+        <file>icon/6.bmp</file>
+        <file>icon/7.bmp</file>
+        <file>icon/delete.bmp</file>
+        <file>icon/IconVC.bmp</file>
+        <file>images/bgfoliar.jpg</file>
+        <file>images/Capture_00001.bmp</file>
+        <file>images/introimage.jpg</file>
+        <file>images/logo.bmp</file>
+    </qresource>
+</RCC>

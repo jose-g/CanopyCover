@@ -1,0 +1,10 @@
+project = QDoc Project Canopy Cover
+description = Sample QDoc project
+sourcedirs = /TrabajoCIP/ProjCanopyCover/source/canopycover
+imagedirs = /TrabajoCIP/ProjCanopyCover/source/canopycover/images
+sources.fileextensions = "*.cpp *.qdoc *.mm *.qml"
+headers.fileextensions = "*.h *.ch *.h++ *.hh *.hpp *.hxx"
+examples.fileextensions = "*.cpp *.h *.js *.xq *.svg *.xml *.ui *.qhp *.qhcp *.qml"
+examples.imageextensions = "*.png *.jpeg *.jpg *.gif *.mng *.bmp *.ico"
+outputdir = /TrabajoCIP/ProjCanopyCover/source/canopycover/doc/html
+outputformats = HTML
