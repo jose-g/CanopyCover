@@ -86,7 +86,7 @@ float PsePicture::methodSegmentation(cv::Mat img,cv::Mat& imgOut,float threshold
   int imgHeight=img.size().height;
   int imgWidth=img.size().width;
   int colR,colG;
-  int colB;
+  //int colB;
   float calc=0.0;
   int contPx=0;
 //  FILE *streamRes;

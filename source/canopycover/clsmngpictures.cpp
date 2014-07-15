@@ -21,7 +21,7 @@ void ClsMngPictures::setOutputFilename(int index,std::string fn)
 void ClsMngPictures::setOutputFilename(std::string odir,std::string prefix)
 {
     std::string name;
-    for(int index=0;index<pic.size();index++)
+    for(int index=0;index<(int)pic.size();index++)
     {
           name=pic.at(index)->getFilename();
           const size_t last_slash_idx = name.find_last_of("\\/");
@@ -31,7 +31,7 @@ void ClsMngPictures::setOutputFilename(std::string odir,std::string prefix)
           }
           const size_t idx = odir.find_last_of("\\/");
           int length=odir.length();
-          if(idx+1==length)
+          if((int)idx+1==length)
           {
             name=odir+prefix+name;
           }
@@ -52,7 +52,7 @@ void ClsMngPictures::setThreshold(int index,float thre)
 }
 void ClsMngPictures::setThreshold(float thre)
 {
-    for(int index=0;index<pic.size();index++)
+    for(int index=0;index<(int)pic.size();index++)
     {
         if(pic.at(index)->flag==1) pic.at(index)->setThreshold(thre);
     }
@@ -66,7 +66,7 @@ void ClsMngPictures::setFlag(int index,int flag)
 
 void ClsMngPictures::setFlag(int flag)
 {
-    for(int index=0;index<pic.size();index++)
+    for(int index=0;index<(int)pic.size();index++)
     {
       pic.at(index)->setFlag(flag);
     }
@@ -170,7 +170,7 @@ void ClsMngPictures::readPicture(std::vector<std::string> vfn)
 }
 void ClsMngPictures::readPicture()
 {
-    for(int index=0;index<pic.size();index++)
+    for(int index=0;index<(int)pic.size();index++)
     {
       if(pic.at(index)->flag==1)
         pic.at(index)->readPicture();
@@ -200,14 +200,14 @@ void ClsMngPictures::readPicture(std::vector<std::string> vfn,std::vector<bool> 
 }
 void ClsMngPictures::segment()
 {
-    for(int index=0;index<pic.size();index++)
+    for(int index=0;index<(int)pic.size();index++)
     {
           pic.at(index)->segment();
     }
 }
 void ClsMngPictures::segment(float thre)
 {
-    for(int index=0;index<pic.size();index++)
+    for(int index=0;index<(int)pic.size();index++)
     {
         pic.at(index)->setThreshold(thre);
         pic.at(index)->segment();
@@ -277,7 +277,7 @@ std::vector<int> ClsMngPictures::getNumPx(bool all)
     std::vector<int> numpx;
     if(all)
     {
-        for(int index=0;index<pic.size();index++)
+        for(int index=0;index<(int)pic.size();index++)
         {
           numpx.push_back(pic.at(index)->getNumPx());
         }
@@ -301,7 +301,7 @@ void ClsMngPictures::segment(int index,float thre,std::string ofn)
 
 void ClsMngPictures::saveOutputImage()
 {
-    for(int index=0;index<pic.size();index++)
+    for(int index=0;index<(int)pic.size();index++)
     {
       if(pic.at(index)->flag==1)
       {
@@ -320,7 +320,7 @@ void ClsMngPictures::saveOutputImage(int index,std::string odir,std::string pref
   }
   const size_t idx = odir.find_last_of("\\/");
   int length=odir.length();
-  if(idx+1==length)
+  if((int)idx+1==length)
   {
     name=odir+prefix+name;
   }
@@ -347,7 +347,7 @@ void ClsMngPictures::saveOutputImage(int index,std::string ofn)
 void ClsMngPictures::saveOutputImage(std::string odir,std::string prefix)
 {
     std::string name;
-    for(int index=0;index<pic.size();index++)
+    for(int index=0;index<(int)pic.size();index++)
     {
       if(pic.at(index)->flag==1)
       {
@@ -359,7 +359,7 @@ void ClsMngPictures::saveOutputImage(std::string odir,std::string prefix)
           }
           const size_t idx = odir.find_last_of("\\/");
           int length=odir.length();
-          if(idx+1==length)
+          if((int)idx+1==length)
           {
             name=odir+prefix+name;
           }

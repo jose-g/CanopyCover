@@ -20,8 +20,8 @@ SOURCES += main.cpp\
     psepicture.cpp \
     imageviewer.cpp \
     frmreport.cpp \
-    frmCond.cpp \
-    pseCanopyCover.cpp
+    pseCanopyCover.cpp \
+    frmCond.cpp
 
 HEADERS  += \
     mainwindow.h \
@@ -30,15 +30,14 @@ HEADERS  += \
     psepicture.h \
     imageviewer.h \
     frmreport.h \
-    frmCond.h \
-    pseCanopyCover.h
+    pseCanopyCover.h \
+    frmCond.h
 
 FORMS    += \
     mainwindow.ui \
     dialogintro.ui \
     imageviewer.ui \
     frmreport.ui \
-    frmCond.ui \
     frmCond.ui
 
 RESOURCES += \

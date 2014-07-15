@@ -17,7 +17,7 @@ frmReport::frmReport(QWidget *parent,std::shared_ptr<ClsMngPictures> cmp,ImageVi
     QDesktopWidget* desktop = QApplication::desktop();
 
     int width = desktop->width();
-    int height = desktop->height();
+    //int height = desktop->height();
     int widthWindow=this->width();
 
     this->move(width-widthWindow-30,100); // locate window on screen

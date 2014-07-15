@@ -22,7 +22,8 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-    void resizeEvent (QResizeEvent* event)
+    //void resizeEvent (QResizeEvent* event)
+    void resizeEvent (QResizeEvent* /* unused */)
     {
         m_pPalette->setBrush(QPalette::Background,QBrush(m_pPixmap->scaled(width(),height())));
         setPalette(*m_pPalette);
